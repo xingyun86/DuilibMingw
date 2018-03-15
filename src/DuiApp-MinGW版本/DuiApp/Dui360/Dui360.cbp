@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Dui360" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_compiler__w64-32_" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/Debug/Dui360" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_compiler__w64-32_" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../bin/Debug" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/Release/Dui360" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_compiler__w64-32_" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="../bin/Release" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../DuiLib/duilib-master" />
+			<Add directory="../DuiLib/duilib-master/DuiLib" />
+		</Compiler>
+		<Linker>
+			<Add option="-static" />
+			<Add library="duilib" />
+			<Add library="OLECLI32" />
+			<Add library="shlwapi" />
+			<Add library="OLEAUT32" />
+			<Add library="imm32" />
+			<Add library="Gdiplus" />
+			<Add library="OLE32" />
+			<Add library="uuid" />
+			<Add library="mshtml" />
+			<Add library="comctl32" />
+			<Add library="gdi32" />
+		</Linker>
+		<Unit filename="360Safe.cpp" />
+		<Unit filename="StdAfx.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

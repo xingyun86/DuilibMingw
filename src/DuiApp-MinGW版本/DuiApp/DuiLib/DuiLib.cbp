@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DuiLib" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_compiler__w64-32_" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/Debug/DuiLib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gnu_gcc_compiler__w64-32_" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/Release/DuiLib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gnu_gcc_compiler__w64-32_" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="duilib-master/DuiLib" />
+		</Compiler>
+		<Linker>
+			<Add library="UUID" />
+			<Add library="GDI32" />
+			<Add library="OLE32" />
+			<Add library="IMM32" />
+			<Add library="MSHTML" />
+			<Add library="GDIPLUS" />
+			<Add library="OLECLI32" />
+			<Add library="SHLWAPI" />
+			<Add library="COMCTL32" />
+			<Add library="OLEAUT32" />
+		</Linker>
+		<Unit filename="duilib-master/DuiLib/Control/UIActiveX.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UIButton.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UICheckBox.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UICombo.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UIDateTime.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UIEdit.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UIGifAnim.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UILabel.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UIList.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UIOption.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UIProgress.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UIRichEdit.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UIScrollBar.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UISlider.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UIText.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UITreeView.cpp" />
+		<Unit filename="duilib-master/DuiLib/Control/UIWebBrowser.cpp" />
+		<Unit filename="duilib-master/DuiLib/Core/UIBase.cpp" />
+		<Unit filename="duilib-master/DuiLib/Core/UIContainer.cpp" />
+		<Unit filename="duilib-master/DuiLib/Core/UIControl.cpp" />
+		<Unit filename="duilib-master/DuiLib/Core/UIDlgBuilder.cpp" />
+		<Unit filename="duilib-master/DuiLib/Core/UIManager.cpp" />
+		<Unit filename="duilib-master/DuiLib/Core/UIMarkup.cpp" />
+		<Unit filename="duilib-master/DuiLib/Core/UIRender.cpp" />
+		<Unit filename="duilib-master/DuiLib/Layout/UIChildLayout.cpp" />
+		<Unit filename="duilib-master/DuiLib/Layout/UIHorizontalLayout.cpp" />
+		<Unit filename="duilib-master/DuiLib/Layout/UITabLayout.cpp" />
+		<Unit filename="duilib-master/DuiLib/Layout/UITileLayout.cpp" />
+		<Unit filename="duilib-master/DuiLib/Layout/UIVerticalLayout.cpp" />
+		<Unit filename="duilib-master/DuiLib/StdAfx.cpp" />
+		<Unit filename="duilib-master/DuiLib/UIlib.cpp" />
+		<Unit filename="duilib-master/DuiLib/Utils/UIDelegate.cpp" />
+		<Unit filename="duilib-master/DuiLib/Utils/Utils.cpp" />
+		<Unit filename="duilib-master/DuiLib/Utils/WinImplBase.cpp" />
+		<Unit filename="duilib-master/DuiLib/Utils/WndShadow.cpp" />
+		<Unit filename="duilib-master/DuiLib/Utils/XUnzip.cpp" />
+		<Unit filename="duilib-master/DuiLib/Utils/stb_image.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="" main="" init_handlers="necessary" language="CPP" />
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
